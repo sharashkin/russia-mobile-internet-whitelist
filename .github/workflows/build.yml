@@ -10,7 +10,7 @@ jobs:
 
       - name: Set up Xcode
         # Use a specific version if needed
-        uses: es/setup-xcode@v1
+        uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '15.0'
 
