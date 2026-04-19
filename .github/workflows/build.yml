@@ -15,4 +15,4 @@ jobs:
           xcode-version: '15.0'
 
       - name: Build App
-        run: xcodebuild -scheme YourSchemeName -configuration Release
+        run: xcodebuild -scheme YourSchemeName -configuration Release CODE_SIGNING_ALLOWED=NO
