@@ -23,7 +23,7 @@ try:
     ping_start = time() 
     for count, ip in enumerate(ip_lst, start =1):
         print(f"Проверено {count} из {len(ip_lst)}")
-        if ping(ip): 
+        if ping(ip, timeout=1): 
             with open("results.txt", "a") as f:
                 print(f'{ip} is up', file=f)
         # else: 
