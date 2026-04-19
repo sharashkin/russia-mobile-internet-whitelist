@@ -1,0 +1,18 @@
+name: white ping
+on: [push]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        # Use a specific version if needed
+        uses: es/setup-xcode@v1
+        with:
+          xcode-version: '15.0'
+
+      - name: Build App
+        run: xcodebuild -scheme YourSchemeName -configuration Release
