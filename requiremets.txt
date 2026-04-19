@@ -1,0 +1,7 @@
+packaging==26.1
+pefile==2024.8.26
+ping3==5.1.5
+pyinstaller==6.19.0
+pyinstaller-hooks-contrib==2026.4
+pywin32-ctypes==0.2.3
+setuptools==82.0.1
