@@ -31,4 +31,8 @@ for ip in ip_lst:
     #         print(f'{ip} is down', file=f)
 ping_total = time() - ping_start
 
+with open("results.txt", "a") as f:
+    print(f'{sp_total = }') # subprocess.getstatusoutput общее время 
+    print(f'{ping_total = }') # ping общее время
+
 
